@@ -1,0 +1,100 @@
+body {
+    font-family: Arial;
+    background: linear-gradient(135deg, #4facfe, #00f2fe);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    width: 420px;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+.hidden {
+    display: none;
+}
+
+/* TOPICS */
+.topics {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin: 15px 0;
+}
+
+.topic {
+    padding: 12px;
+    text-align: center;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    cursor: pointer;
+    background: #f8f8f8;
+    transition: 0.2s;
+}
+
+.topic.active {
+    background: #007bff;
+    color: white;
+    border-color: #007bff;
+}
+
+/* QUIZ */
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.option {
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin: 6px 0;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.option.selected {
+    background: #d0e8ff;
+    border-color: #007bff;
+}
+
+.btn-group {
+    display: flex;
+    gap: 5px;
+    margin-top: 10px;
+}
+
+button {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    background: #007bff;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    margin: 10px 0;
+}
+
+.status {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #333;
+}

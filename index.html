@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Quiz App</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- SETUP SCREEN -->
+    <div id="setup" class="card">
+        <h2>Select Topic</h2>
+
+        <div class="topics">
+            <div class="topic" onclick="selectTopic('programming', event)">Programming</div>
+            <div class="topic" onclick="selectTopic('aptitude', event)">Aptitude</div>
+            <div class="topic" onclick="selectTopic('gk', event)">GK</div>
+            <div class="topic" onclick="selectTopic('science', event)">Science</div>
+        </div>
+
+        <label>Number of Questions</label>
+        <input type="number" id="numQ" min="1" max="10" value="5">
+
+        <button id="startBtn" onclick="startQuiz()" disabled>Start Quiz</button>
+    </div>
+
+    <!-- QUIZ SCREEN -->
+    <div id="quiz" class="card hidden">
+
+        <div class="top-bar">
+            <div id="timer">60</div>
+            <div id="progress"></div>
+        </div>
+
+        <h3 id="question"></h3>
+        <div id="options"></div>
+
+        <div class="btn-group">
+            <button onclick="skipQuestion()">Skip</button>
+            <button onclick="markReview()">Review Later</button>
+            <button onclick="nextQuestion()">Next</button>
+        </div>
+
+        <div class="status">
+            <p id="statusText"></p>
+        </div>
+    </div>
+
+    <!-- RESULT SCREEN -->
+    <div id="result" class="card hidden"></div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
