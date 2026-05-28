@@ -9,5 +9,3 @@ A responsive and interactive Quiz Application built using HTML, CSS, and JavaScr
 - Live tracking of answered, reviewed, and remaining questions
 - Final result summary screen
 
-## Project URL
-https://YOUR-GITHUB-USERNAME.github.io/YOUR-REPOSITORY-NAME/
